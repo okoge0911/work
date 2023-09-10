@@ -13,12 +13,6 @@ Route::get('login', [LoginController::class, 'index'])->name('login.index');
 Route::post('login', [LoginController::class, 'login'])->name('login.login');
 Route::get('logout', [LoginController::class, 'logout'])->name('login.logout');
 
-// Route::prefix('mypage')->group(function () {
-//   Route::get('/', [HomeController::class, 'dashboard'])->name('mypage.dashboard');
-//   Route::get('/search_community', [UserSearchCommunityController::class, 'get']);
-//   Route::get('/search_community_inner', [UserSearchCommunityController::class, 'innerShow']);
-// });
-
 Route::prefix('mypage')->middleware('auth.members:members')->group(function () {
   Route::get('/', [HomeController::class, 'dashboard'])->name('mypage.dashboard');
   Route::prefix('/search_community')->group(function(){
