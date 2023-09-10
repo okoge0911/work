@@ -18,17 +18,17 @@
   </header>
   <main style="width:80%; margin: 0 auto;">
     <div class="" style="margin-top: 10%; display: flex; flex-wrap: wrap; gap: 30px 20px;">
-      <button type="button" class="btn btn-outline-info" style="width: 30%;"><i class="bi bi-house"></i> HOME</button>
+      <button type="button" onclick="location.href='{{ route('admin.dashboard') }}'" class="btn btn-outline-info" style="width: 30%;"><i class="bi bi-house"></i> HOME</button>
 
-      <button type="button" class="btn btn-outline-info" style="width: 30%;"><i class="bi bi-person-fill-gear"></i> ユーザー情報管理</button>
+      <button type="button" onclick="location.href='{{ route('admin.user_watching') }}'" class="btn btn-outline-info" style="width: 30%;"><i class="bi bi-person-fill-gear"></i> ユーザー情報管理</button>
 
-      <button type="button" class="btn btn-outline-info" style="width: 30%;"><i class="bi bi-chat-dots"></i> コミュニティ管理</button>
+      <button type="button" onclick="location.href='{{ route('admin.community_search') }}'" class="btn btn-outline-info" style="width: 30%;"><i class="bi bi-chat-dots"></i> コミュニティ管理</button>
 
-      <button type="button" class="btn btn-outline-info" style="width: 30%;"><i class="bi bi-gear"></i> 管理者情報管理</button>
+      <button type="button" onclick="location.href='{{ route('admin.admin_user_management') }}'" class="btn btn-outline-info" style="width: 30%;"><i class="bi bi-gear"></i> 管理者情報管理</button>
 
-      <button type="button" class="btn btn-outline-info" style="width: 30%;"><i class="bi bi-exclamation-triangle-fill"></i> NGワード管理</button>
+      <button type="button" onclick="location.href='{{ route('admin.ng_word') }}'" class="btn btn-outline-info" style="width: 30%;"><i class="bi bi-exclamation-triangle-fill"></i> NGワード管理</button>
 
-      <button type="button" class="btn btn-outline-info" style="width: 30%;"><i class="bi bi-envelope"></i> お問合せ対応</button>
+      <button type="button" onclick="location.href='{{ route('admin.info') }}'" class="btn btn-outline-info" style="width: 30%;"><i class="bi bi-envelope"></i> お問合せ対応</button>
     </div>
   </main>
   <footer style="background-color:azure; margin-top:10%">
@@ -42,7 +42,9 @@
 
         </div>
     </footer>
+<script>
 
+</script>
 </body>
 
 </html>

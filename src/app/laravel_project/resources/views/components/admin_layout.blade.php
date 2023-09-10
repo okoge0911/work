@@ -15,12 +15,12 @@
       <a href="/admin/logout" style="padding:4%">ログアウト</a>
     </div>
         <div class="list-group d-flex flex-row justify-content-center">
-            <a href="" class="list-group-item flex-fill text-center"><i class="bi bi-house"></i> HOME</a>
-            <a href="" class="list-group-item flex-fill text-center"><i class="bi bi-person-fill-gear"></i> ユーザー情報管理</a>
-            <a href="" class="list-group-item flex-fill text-center"><i class="bi bi-chat-dots"></i>  コミュニティ管理</a>
-            <a href="" class="list-group-item flex-fill text-center"><i class="bi bi-gear"></i> 管理者情報管理</a>
-            <a href="" class="list-group-item flex-fill text-center"><i class="bi bi-exclamation-triangle-fill"></i> NGワード管理</a>
-            <a href="" class="list-group-item flex-fill text-center"><i class="bi bi-envelope"></i> お問合せ対応</a>
+            <a href="{{route('admin.dashboard')}}" class="list-group-item flex-fill text-center"><i class="bi bi-house"></i> HOME</a>
+            <a href="{{route('admin.user_watching')}}" class="list-group-item flex-fill text-center"><i class="bi bi-person-fill-gear"></i> ユーザー情報管理</a>
+            <a href="{{route('admin.community_search')}}" class="list-group-item flex-fill text-center"><i class="bi bi-chat-dots"></i>  コミュニティ管理</a>
+            <a href="{{route('admin.admin_user_management')}}" class="list-group-item flex-fill text-center"><i class="bi bi-gear"></i> 管理者情報管理</a>
+            <a href="{{route('admin.ng_word')}}" class="list-group-item flex-fill text-center"><i class="bi bi-exclamation-triangle-fill"></i> NGワード管理</a>
+            <a href="{{route('admin.info')}}" class="list-group-item flex-fill text-center"><i class="bi bi-envelope"></i> お問合せ対応</a>
         </div>
     </header>
     <main>
